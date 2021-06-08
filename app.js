@@ -10,6 +10,12 @@ function escogerPregunta(n) {
     select_id("imagen").setAttribute("src", pregunta.imagen)    // Mediante el ID seleccionamos el objeto imagen y le cambiamos el atributo src por el que viene del .json
     // style("imagen").objectFit = pregunta.objectFit              // Modificamos el estilo "object-fit" de la imagen y le colocamos el que viene del .json
     style("imagen").objectFit = pregunta.object_fit
+    
+    // Mediante el ID seleccionamos los botones y les asignamos la pregunta correcta y las incorrectas
+    select_id("btn1").innerHTML = pregunta.respuesta
+    select_id("btn2").innerHTML = pregunta.incorrecta1
+    select_id("btn3").innerHTML = pregunta.incorrecta2
+    select_id("btn4").innerHTML = pregunta.incorrecta3
 }
 
 // Selecciona un objeto segun su ID
