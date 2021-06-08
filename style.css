@@ -1,0 +1,13 @@
+body {
+    background: slategray;
+}
+
+/* Alinea todos los elementos de lampagina en una sola columna */
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
