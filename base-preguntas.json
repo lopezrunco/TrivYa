@@ -7,6 +7,6 @@
         "incorrecta2": "Miguel Angel",
         "incorrecta3": "Monet",
         "imagen": "img/mona-lisa.jpg",
-        "object_fit": "cover"
+        "object_fit": "contain"
     }
 ]

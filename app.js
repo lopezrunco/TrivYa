@@ -1,10 +1,15 @@
-escogerPregunta()
+escogerPregunta(0)
 
-
-function escogerPregunta() {
-    let base_preguntas = readText("questions-db.json")  // El texto de la base de preguntas lo almacenamos en una variable
-    let interprete_bp = JSON.parse(base_preguntas)      // Hacemos un interprete para la base de preguntas
-    pregunta = interprete_bp[n]                         // Tomamos una de las preguntas con el indice
+// Escoge una pregunta de la base de datos 
+function escogerPregunta(n) {
+    let base_preguntas = readText("base-preguntas.json")        // El texto de la base de preguntas lo almacenamos en una variable
+    let interprete_bp = JSON.parse(base_preguntas)              // Hacemos un interprete para la base de preguntas y lo guardamos en una variable
+    pregunta = interprete_bp[n]                                 // Tomamos una de las preguntas con el indice y lo guardamos en una variable
+    select_id("categoria").innerHTML = pregunta.categoria       // Mediante el ID seleccionamos el objeto "categoria" y en su html le colocamos la categoria que viene del .json
+    select_id("pregunta").innerHTML = pregunta.pregunta         // Mediante el ID seleccionamos el objeto "pregunta" y en su html le colocamos la pregunta que viene del .json
+    select_id("imagen").setAttribute("src", pregunta.imagen)    // Mediante el ID seleccionamos el objeto imagen y le cambiamos el atributo src por el que viene del .json
+    // style("imagen").objectFit = pregunta.objectFit              // Modificamos el estilo "object-fit" de la imagen y le colocamos el que viene del .json
+    style("imagen").objectFit = pregunta.object_fit
 }
 
 // Selecciona un objeto segun su ID
