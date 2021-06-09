@@ -1,10 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --main-color: rgb(136, 0, 0);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Kalam", cursive;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+    color: var(--main-color);
+}
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
 }
 
 body {
@@ -16,6 +33,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   min-height: 100vh;
   background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
 }
@@ -27,24 +45,24 @@ section .color {
 
 section .color:nth-child(1) {
   top: -350px;
-  width: 600px;
-  height: 600px;
+  width: 900px;
+  height: 900px;
   background: #ff359b;
 }
 
 section .color:nth-child(2) {
   bottom: -150px;
   left: 100px;
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 800px;
   background: #fffd87;
 }
 
 section .color:nth-child(3) {
   bottom: 50px;
   right: 100px;
-  width: 300px;
-  height: 300px;
+  width: 700px;
+  height: 700px;
   background: #00d2ff;
 }
 
@@ -64,17 +82,19 @@ section .color:nth-child(3) {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   animation: animate 10s linear infinite;
-  animation-delay: calc(-1s * var(--i));    /* Obtenemos una variable desde los diferentes squares en el HTML, que resulta en una animacion diferente en cada uno */
+  animation-delay: calc(
+    -1s * var(--i)
+  ); /* Obtenemos una variable desde los diferentes squares en el HTML, que resulta en una animacion diferente en cada uno */
 }
 
 @keyframes animate {
-    0%,
-    100% {
-        transform: translateY(-40px);
-    }
-    50% {
-        transform: translateY(40px);
-    }
+  0%,
+  100% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
 }
 
 .box .square:nth-child(1) {
@@ -86,8 +106,8 @@ section .color:nth-child(3) {
 .box .square:nth-child(2) {
   top: 150px;
   left: -100px;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   z-index: 2;
 }
 .box .square:nth-child(3) {
@@ -109,11 +129,38 @@ section .color:nth-child(3) {
   width: 60px;
   height: 60px;
 }
+.box .square:nth-child(6) {
+  top: 30px;
+  left: 440px;
+  width: 35px;
+  height: 35px;
+}
+.box .square:nth-child(7) {
+  bottom: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  z-index: 2;
+}
+.box .square:nth-child(8) {
+  bottom: -30px;
+  left: -20px;
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+}
+.box .square:nth-child(9) {
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+}
 
 .container {
   position: relative;
-  width: 400px;
-  min-height: 400px;
+  width: 380px;
+  min-height: 380px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   display: flex;
@@ -126,22 +173,25 @@ section .color:nth-child(3) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.form {
+.content {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 40px;
 }
 
-.form h1 {
+.content h1 {
+  font-family: "Bubblegum Sans", cursive;
   position: relative;
-  color: #fff;
-  font-size: 24px;
-  letter-spacing: 1px;
+  color: var(--main-color);
+  font-size: 10rem;
   margin-bottom: 40px;
+  transform: rotate(-5deg) scale(1.2) translateX(-30px);
+  letter-spacing: -10px;
+  text-shadow: 1px 1px 1px #000, 9px 9px 0px #ffffffc2;
 }
 
-.form a {
+.content a {
   display: inline-block;
   width: 100px;
   margin: 20px 0;
@@ -154,6 +204,16 @@ section .color:nth-child(3) {
   font-size: 16px;
   letter-spacing: 1px;
   color: #666;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
   font-weight: 600;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+.content a:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.credits {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
 }
