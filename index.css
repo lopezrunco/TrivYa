@@ -213,11 +213,18 @@ section .color:nth-child(3) {
   color: #fff;
 }
 
-.credits {
+.credits,
+.back-home {
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 0.9rem;
+}
+
+.back-home a {
+  font-size: 1.1rem;
+  color: var(--main-color);
 }
 
 /* TrivYa styles -------------------------------------------------------------------------------------------------------- */
@@ -249,17 +256,25 @@ section .color:nth-child(3) {
 }
 
 .categoria {
-  opacity: 0.3;
   text-align: left;
   padding-left: 10px;
   font-size: 1rem;
   font-weight: 700;
+  background: #ffffff47;
+  border-radius: 10px;
+  color: var(--main-color);
+}
+
+.categoria::before {
+  content: 'Categoría: ';
+  font-weight: 400;
 }
 
 .pregunta {
-  padding: 20px 10px;
-  font-size: 1.8rem;
+  padding: 40px 10px 20px 10px;
+  font-size: 1.5rem;
   font-weight: 700;
+  color: var(--main-color);
 }
 
 .imagen {
@@ -291,12 +306,17 @@ section .color:nth-child(3) {
 
 .numero {
   position: absolute;
-  opacity: 0.3;
   top: 0;
   right: 10px;
   font-weight: 700;
   padding: 10px;
   font-size: 1rem;
+  color: var(--main-color);
+}
+
+.numero::before {
+  content: 'Pregunta N° ';
+  font-weight: 400;
 }
 
 .puntaje-label {

@@ -609,14 +609,6 @@
     },
     {
         "categoria": "Arte y literatura",
-        "pregunta": " Escribió 'Grandes esperanzas'.",
-        "respuesta": "Charles Dickens",
-        "incorrecta1": "Virginia Woolf",
-        "incorrecta2": "Henry James",
-        "incorrecta3": "James Joyce\r"
-    },
-    {
-        "categoria": "Arte y literatura",
         "pregunta": "País del que fue el rey el inspirador de la tragedia 'Macbeth'.",
         "respuesta": "Escocia",
         "incorrecta1": "Irlanda",
