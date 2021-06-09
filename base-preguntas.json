@@ -9171,14 +9171,6 @@
     },
     {
         "categoria": "Matemática",
-        "pregunta": "nacionalidad\"",
-        "respuesta": "Frances",
-        "incorrecta1": "Italiano",
-        "incorrecta2": "Colombiano",
-        "incorrecta3": "Mexicano\r"
-    },
-    {
-        "categoria": "Matemática",
         "pregunta": "Euclides, nacionalidad",
         "respuesta": "Griego",
         "incorrecta1": "Africano",

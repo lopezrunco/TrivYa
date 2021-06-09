@@ -97,13 +97,13 @@ function oprimir_btn(i) {
 
     if (posibles_respuestas[i] == pregunta.respuesta) {             // La condiciones: si la posible respuesta es igual a la respuesta a la pregunta...
         preguntas_correctas++                                       // Agregar un valor a las preguntas correctas
-        btn_correspondiente[i].style.background = "#00d800"         // Si la respuesta es correcta, le asignamos un color verde de fondo
+        btn_correspondiente[i].style.background = "radial-gradient(circle, rgba(0,216,0,1) 0%, rgba(136,255,136,1) 100%)"           // Si la respuesta es correcta, le asignamos un color verde de fondo
     } else {
-        btn_correspondiente[i].style.background = "#ff3939"         // Si la respuesta es incorrecta, le asignamos un color rojo de fondo
+        btn_correspondiente[i].style.background = "radial-gradient(circle, rgba(255,57,57,1) 0%, rgba(255,115,115,1) 100%)"         // Si la respuesta es incorrecta, le asignamos un color rojo de fondo
     }
     for (let j = 0; j < 4; j++) {                                   // Este loop chequea si las posibles_respuestas coinciden con la respuesta a la pregunta
         if (posibles_respuestas[j] == pregunta.respuesta) {
-            btn_correspondiente[j].style.background = "#00d800"     // Si se cumple la condicion, le añadimos un background verde al boton
+            btn_correspondiente[j].style.background = "radial-gradient(circle, rgba(0,216,0,1) 0%, rgba(136,255,136,1) 100%)"       // Si se cumple la condicion, le añadimos un background verde al boton
             break
         }
     }
@@ -119,7 +119,7 @@ function oprimir_btn(i) {
 // Cuando se reinicia, los botones vuelven a  tener fondo blanco y cambia de pregunta
 function reiniciar() {
     for (const btn of btn_correspondiente) {                // Recorre todos los botones y les asigna un background blanco
-        btn.style.background = "white"
+        btn.style.background = "rgba(255, 255, 255, 0.1)"
     }
     escogerPreguntaAleatoria()                              // Escoge una nueva pregunta
 }
