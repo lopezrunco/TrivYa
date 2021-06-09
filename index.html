@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>TrivYa!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     <!-- Meta etiqueta para evitar que google traduzca la pagina -->
     <meta name="google" content="notranslate" />
+    <title>Bienvenido a TrivYa!</title>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="contenedor">
-        <div class="puntaje" id="puntaje"></div>    <!-- Indicara el puntaje -->
-        <div class="encabezado">
-          <div class="categoria" id="categoria">
-          </div>
-          <div class="numero" id="numero"></div>    <!-- Indicara el numero de la pregunta -->
-          <div class="pregunta" id="pregunta">
-          </div>
-          <img src="#" class="imagen" id="imagen">
-        </div>
-        <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
-        <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
-        <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
-        <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
 
-    <!-- Javascript -->
-    <script src="app.js"></script>
-</body>
+    <section>
+        <!-- Start BG code -->
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <!-- End BG code -->
+
+        <!-- Start box code -->
+        <div class="box">
+
+            <!-- Start floating squares code -->
+            <div class="square" style="--i:0"></div>
+            <div class="square" style="--i:1"></div>
+            <div class="square" style="--i:2"></div>
+            <div class="square" style="--i:3"></div>
+            <div class="square" style="--i:4"></div>
+            <!-- End floating squares code -->
+
+            <div class="container">
+                <div class="form">
+                    <h1>TrivYa!</h1>
+                    <p>Sacale el jugo a tu masa encefálica</p>
+                    <a href="">Jugar</a>
+                </div>
+            </div>
+        </div>
+        <!-- End box code -->
+    </section>
+
+  </body>
 </html>
