@@ -29,6 +29,7 @@ body {
     background: white;
     min-width: 300px;
     width: 70%;
+    max-width: 600px;
     padding: 10px;
 }
 
@@ -50,6 +51,7 @@ body {
 .btn {
     background: white;
     width: 60%;
+    max-width: 550px;
     padding: 10px;
     margin: 5px;
 }
