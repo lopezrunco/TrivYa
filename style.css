@@ -1,15 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 
+:root {
+    --very-dark-color: #0C2D48;
+    --dark-color: #145DA0;
+    --medium-color: #2E8BC0;
+    --light-color: #B1D4E0; 
+}
+
 * {
   transition: all 0.3s;
 }
 
 body {
-  background: rgb(112, 128, 144);
+  background: var(--very-dark-color);
   background: radial-gradient(
     circle,
-    rgba(112, 128, 144, 1) 0%,
-    rgba(39, 54, 69, 1) 100%
+    var(--medium-color) 0%,
+    var(--very-dark-color) 100%
   );
   padding: 0;
   margin: 0;
@@ -30,20 +37,26 @@ body {
 
 .encabezado {
   position: relative;
-  background: white;
+  background: #fff;
   min-width: 300px;
-  width: 70%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 800px;
   padding: 10px;
+  margin: 30px;
+  box-shadow: 5px 5px 20px #0000008c;
 }
 
 .categoria {
   opacity: 0.3;
   text-align: left;
+  padding-left: 10px;
+  font-size: 1rem;
 }
 
 .pregunta {
   padding: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .imagen {
@@ -53,26 +66,30 @@ body {
 }
 
 .btn {
-  background: white;
+  background: #fff;
   width: 60%;
   max-width: 550px;
   padding: 10px;
   margin: 5px;
   cursor: pointer;
+  box-shadow: 5px 0px 10px #0000008c;
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: translateX(1rem);
 }
 
 .numero {
   position: absolute;
   opacity: 0.3;
-  top: 10px;
+  top: 0;
   right: 10px;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 1rem;
 }
 
 .puntaje {
   padding: 10px;
-  color: white;
+  color: #fff;
 }

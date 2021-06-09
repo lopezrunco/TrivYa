@@ -69,7 +69,7 @@ function escogerPregunta(n) {
 
 // Desordena las respuestas en los botones
 function desordenarRespuestas(pregunta) {
-    posibles_respuestas = [                                    // Este arreglo contiene todas las posbiles respuestas obtenidas desde el .json
+    posibles_respuestas = [                                    // Este arreglo contiene todas las posibles respuestas obtenidas desde el .json
         pregunta.respuesta,
         pregunta.incorrecta1,
         pregunta.incorrecta2,
@@ -97,13 +97,13 @@ function oprimir_btn(i) {
 
     if (posibles_respuestas[i] == pregunta.respuesta) {             // La condiciones: si la posible respuesta es igual a la respuesta a la pregunta...
         preguntas_correctas++                                       // Agregar un valor a las preguntas correctas
-        btn_correspondiente[i].style.background = "green"           // Si la respuesta es correcta, le asignamos un color verde de fondo
+        btn_correspondiente[i].style.background = "#00d800"         // Si la respuesta es correcta, le asignamos un color verde de fondo
     } else {
-        btn_correspondiente[i].style.background = "red"             // Si la respuesta es incorrecta, le asignamos un color rojo de fondo
+        btn_correspondiente[i].style.background = "#ff3939"         // Si la respuesta es incorrecta, le asignamos un color rojo de fondo
     }
     for (let j = 0; j < 4; j++) {                                   // Este loop chequea si las posibles_respuestas coinciden con la respuesta a la pregunta
         if (posibles_respuestas[j] == pregunta.respuesta) {
-            btn_correspondiente[j].style.background = "green"       // Si se cumple la condicion, le añadimos un background verde al boton
+            btn_correspondiente[j].style.background = "#00d800"     // Si se cumple la condicion, le añadimos un background verde al boton
             break
         }
     }
