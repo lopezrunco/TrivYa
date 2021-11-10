@@ -85,7 +85,7 @@ section .color:nth-child(3) {
   animation: animate 10s linear infinite;
   animation-delay: calc(
     -1s * var(--i)
-  ); /* Obtenemos una variable desde los diferentes squares en el HTML, que resulta en una animacion diferente en cada uno */
+  ); /* Obtains a variable from different squares in DOM, wich results a different effect for each one */
 }
 
 @keyframes animate {
@@ -229,8 +229,7 @@ section .color:nth-child(3) {
 
 /* TrivYa styles -------------------------------------------------------------------------------------------------------- */
 
-/* Alinea todos los elementos de la pagina en una sola columna */
-.contenedor {
+.app-container {
   width: 98vw;
   height: 97vh;
   display: inline-flex;
@@ -239,7 +238,7 @@ section .color:nth-child(3) {
   align-items: center;
 }
 
-.encabezado {
+.header {
   position: relative;
   min-width: 300px;
   width: 90%;
@@ -255,7 +254,7 @@ section .color:nth-child(3) {
   border-radius: 10px;
 }
 
-.categoria {
+.category {
   text-align: left;
   padding-left: 10px;
   font-size: 1rem;
@@ -265,19 +264,19 @@ section .color:nth-child(3) {
   color: var(--main-color);
 }
 
-.categoria::before {
-  content: 'Categoría: ';
+.category::before {
+  content: 'Category: ';
   font-weight: 400;
 }
 
-.pregunta {
+.quiz {
   padding: 40px 10px 20px 10px;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--main-color);
 }
 
-.imagen {
+.image {
   object-fit: cover;
   height: 0px;
   width: 0px;
@@ -304,7 +303,7 @@ section .color:nth-child(3) {
   transform: translateX(1rem);
 }
 
-.numero {
+.number {
   position: absolute;
   top: 0;
   right: 10px;
@@ -314,18 +313,18 @@ section .color:nth-child(3) {
   color: var(--main-color);
 }
 
-.numero::before {
-  content: 'Pregunta N° ';
+.number::before {
+  content: 'Quiz: ';
   font-weight: 400;
 }
 
-.puntaje-label {
+.score-label {
   z-index: 10;
   margin-bottom: 5px;
   font-weight: 700;
 }
 
-.puntaje {
+.score {
   padding: 10px;
   color: #fff;
   z-index: 10;
