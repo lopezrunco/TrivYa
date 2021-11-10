@@ -1,42 +1,81 @@
 const quizData = [
     {
-        "category": "Technology",
+        "category": "Web development",
         "quiz": "Wich language runs in a web browser?",
         "answer": "JavaScript",
         "wrongAnswer1": "Java",
         "wrongAnswer2": "C",
         "wrongAnswer3": "Python",
-        "image": "https://i.ibb.co/9cjvmw1/mona-lisa.jpg",
+        "image": "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
         "objectFit": "cover"
     },
     {
-        "category": "Technology",
+        "category": "Web development",
         "quiz": "What does CSS stand for?",
         "answer": "Cascading Style Sheets",
         "wrongAnswer1": "Central Style Sheets",
         "wrongAnswer2": "Cascading Simple Sheets",
         "wrongAnswer3": "Cars SUVs Sailboats",
-        "image": "https://i.ibb.co/SDjX7PM/jardin-de-las-delicias.jpg",
+        "image": "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80",
         "objectFit": "cover"
     },
     {
-        "category": "Technology",
+        "category": "Web development",
         "quiz": "What does HTML stand for?",
         "answer": "Hypertext Markup Language",
         "wrongAnswer1": "Hypertext Markdow Language",
         "wrongAnswer2": "Hyperloop Machine Language",
         "wrongAnswer3": "Helicopters Terminals Motorboats Lamborginis",
-        "image": "https://i.ibb.co/SDjX7PM/jardin-de-las-delicias.jpg",
+        "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
         "objectFit": "cover"
     },
     {
-        "category": "Technology",
+        "category": "Web development",
         "quiz": "What year was JavaScript launched?",
         "answer": "1995",
         "wrongAnswer1": "1996",
         "wrongAnswer2": "1994",
-        "wrongAnswer3": "none of the above",
-        "image": "https://i.ibb.co/zfM2Vyd/paul-auster.jpg"
+        "wrongAnswer3": "none of the others",
+        "image": "https://images.unsplash.com/photo-1592609931095-54a2168ae893?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        "category": "Pop Culture",
+        "quiz": "What is Hawkeye’s real name?",
+        "answer": "Clint Barton",
+        "wrongAnswer1": "Tony Stark",
+        "wrongAnswer2": "Peter Parker",
+        "wrongAnswer3": "Frank Castle",
+        "image": "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "objectFit": "cover"
+    },
+    {
+        "category": "Pop Culture",
+        "quiz": "Which Avenger is the only one who could calm the Hulk down?",
+        "answer": "Black Widow",
+        "wrongAnswer1": "Iron Man",
+        "wrongAnswer2": "Thor",
+        "wrongAnswer3": "Ant Man",
+        "image": "https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80",
+        "objectFit": "cover"
+    },
+    {
+        "category": "Pop Culture",
+        "quiz": "Night Crawler, member of the X-Men, has what kind of powers?",
+        "answer": "Can teleport",
+        "wrongAnswer1": "X-Ray vision",
+        "wrongAnswer2": "Can fly",
+        "wrongAnswer3": "Made shadows with his hands",
+        "image": "https://images.unsplash.com/photo-1618519764620-7403abdbdfe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "objectFit": "cover"
+    },
+    {
+        "category": "Pop Culture",
+        "quiz": "What was Superman’s birth name?",
+        "answer": "Kal-El",
+        "wrongAnswer1": "Jor-El",
+        "wrongAnswer2": "Sal-El",
+        "wrongAnswer3": "Jo-Der",
+        "image": "https://images.unsplash.com/photo-1538051046377-5ad74dc62f95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     }
 ]
 
