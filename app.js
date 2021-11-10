@@ -40,7 +40,7 @@ const quizData = [
     },
     {
         "category": "Pop Culture",
-        "quiz": "What is Hawkeye’s real name?",
+        "quiz": "What is Hawkeye's real name?",
         "answer": "Clint Barton",
         "wrongAnswer1": "Tony Stark",
         "wrongAnswer2": "Peter Parker",
@@ -70,7 +70,7 @@ const quizData = [
     },
     {
         "category": "Pop Culture",
-        "quiz": "What was Superman’s birth name?",
+        "quiz": "What was Superman's birth name?",
         "answer": "Kal-El",
         "wrongAnswer1": "Jor-El",
         "wrongAnswer2": "Sal-El",
