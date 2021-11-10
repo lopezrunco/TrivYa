@@ -25,7 +25,6 @@ a:hover {
 }
 
 body {
-  /* overflow: hidden; */
   font-size: 1.1rem;
 }
 
@@ -372,8 +371,23 @@ section .color:nth-child(3) {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .box {
     transform: scale(0.5);
+  }
+
+  .back-home,
+  .category,
+  .number {
+    display: none;
+  }
+
+  .buttons-container {
+    gap: 4px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 5px;
   }
 }
