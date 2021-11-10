@@ -345,3 +345,35 @@ section .color:nth-child(3) {
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   font-size: 14px;
 }
+
+/* Media queries ----------------------------------------------- */
+
+@media screen and (max-width: 992px) {
+  .box {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    transform: scale(0.7);
+  }
+  .buttons-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .box {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .box {
+    transform: scale(0.5);
+  }
+}
