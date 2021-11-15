@@ -98,6 +98,19 @@ nQuestions = []
 let formulatedQuestions = 0
 let rightAnswers = 0
 
+// Sounds
+let rightAnswerSound = new Audio('./audio/rightAnswer.mp3')
+let wrongAnswerSound = new Audio('./audio/wrongAnswer.mp3')
+
+// Right & wrong answer sound play
+function rightAnswer() {
+    rightAnswerSound.play()
+}
+
+function wrongAnswer() {
+    wrongAnswerSound.play()
+}
+
 // Choose a random question
 function selectRandomQuestion() {
     let n = Math.floor(Math.random() * quizData.length)
@@ -191,12 +204,18 @@ function press_btn(i) {
         // Plus one to the right answered questions
         rightAnswers++
 
-        // If the answer is OK, set a green background
+        // If the answer is OK, set a green background and play right answer sound
         correspondingButton[i].style.background = "radial-gradient(circle, rgba(0,216,0,1) 0%, rgba(136,255,136,1) 100%)"
+        setTimeout(() => {
+            rightAnswer()
+        }, 200);
     } else {
 
-        // If the answer is wrong, set a red background
+        // If the answer is wrong, set a red background and play right answer sound
         correspondingButton[i].style.background = "radial-gradient(circle, rgba(255,57,57,1) 0%, rgba(255,115,115,1) 100%)"
+        setTimeout(() => {
+            wrongAnswer()
+        }, 200);
     }
 
     // Check the possible answers with the question answer
