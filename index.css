@@ -351,6 +351,14 @@ section .color:nth-child(3) {
   .box {
     transform: scale(0.8);
   }
+
+  .box .square {
+    display: none;
+  }
+
+  .content h1 {
+    text-shadow: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
